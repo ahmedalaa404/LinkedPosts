@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="#">
+      <img src="image/HambozoLogo.png" class="w-25" alt="Logo" >
+    </a>
+    <button class="navbar-toggler" type="button" (click)="collapsed = !collapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse" [ngbCollapse]="collapsed" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#">Link</a>
+        </li>
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" ngbDropdownToggle routerLink="#" role="button">
+            Dropdown
+          </a>
+          <ul *ngbDropdownMenu class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="#">Action</a></li>
+            <li><a class="dropdown-item" routerLink="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" routerLink="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item dropdown"ngbDropdown>
+          <a class="nav-link dropdown-toggle text-end" ngbDropdownToggle role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="image/profile.png" class="w-25">
+          </a>
+          <ul class="dropdown-menu end-0 left-0"  ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <li><a class="dropdown-item" href="#">Setting</a></li>
+            <li><a class="dropdown-item" href="#">logout</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+
+
+
+
+
+
+
+  </div>
+</nav>
