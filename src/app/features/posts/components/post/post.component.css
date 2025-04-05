@@ -1,0 +1,15 @@
+.comment
+{
+
+  background-color: rgba(228, 212, 212, 0.241);
+}
+
+.post , .comment
+{
+  border-radius: 10px;
+}
+
+input.comment
+{
+  border-radius: 30px;
+}

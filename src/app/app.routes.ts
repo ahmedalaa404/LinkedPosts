@@ -8,7 +8,10 @@ import { SigninComponent } from './Core/Auth/signin/signin.component';
 import { SignupComponent } from './Core/Auth/signup/signup.component';
 
 export const routes: Routes = [
-  { path: '', component: MainLayoutComponent, children: [] },
+  { path: '', component: MainLayoutComponent, children: [
+
+    {path:'timeline',component:TimelineComponent},
+  ] },
 
   {
     path: '',
@@ -18,9 +21,7 @@ export const routes: Routes = [
       { path: 'SignUp', component: SignupComponent },
     ],
   },
-  {
-    path: 'timeline',
-    component: TimelineComponent,
-    children: [],
-  },
+
+
+
 ];
